@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            position: relative;
+            margin: 5% auto;
+            border: 1px solid #CCCCCC;
+            width: 300px;
+            height: 300px;
+            /* perspective:1000px;
+            -webkit-perspective:1000px; */
+        }
+
+        .bor {
+            position: relative;
+            top: 2%;
+            left: 40%;
+            width: 40%;
+            height: 40%;
+            border: 25px solid white;
+            /* border: 5px solid yellow; */
+            /* -webkit-font-smoothing: subpixel-antialiased; */
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            /* transform:rotateY(50deg) rotateX(40deg) translateZ(0); */
+            /* -webkit-transform:rotateY(50deg) rotateX(40deg) translateZ(0); */
+            background-color: red;
+            margin: -1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bor">
+        </div>
+    </div>
+</body>
+</html>
